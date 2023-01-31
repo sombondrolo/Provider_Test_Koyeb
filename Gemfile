@@ -28,3 +28,5 @@ group :development do
   # gem "spring"
 end
 
+# bundle add pg
+gem "pg", "~> 1.4"
