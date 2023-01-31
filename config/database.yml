@@ -15,11 +15,12 @@ test:
 
 production:
   <<: *default
-  # database: koyeb_elephantsql
+  database: koyeb_elephantsql
   url: <%= ENV["ELEPHANTSQL_URL"] %>
   username: <%= ENV["ELEPHANTSQL_USERNAME"] %>
   password: <%= ENV["ELEPHANTSQL_PASSWORD"] %>
   host: <%= ENV["ELEPHANTSQL_HOST"] %>
+
 
 # # SQLite. Versions 3.8.0 and up are supported.
 # #   gem install sqlite3
