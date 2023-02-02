@@ -15,7 +15,7 @@ test:
 
 production:
   <<: *default
-  database: koyeb_azure_west_eu
+  database: <%= ENV["ELEPHANTSQL_DB"] %>
   url: <%= ENV["ELEPHANTSQL_URL"] %>
   username: <%= ENV["ELEPHANTSQL_USERNAME"] %>
   password: <%= ENV["ELEPHANTSQL_PASSWORD"] %>
